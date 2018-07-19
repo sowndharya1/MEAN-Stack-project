@@ -1,0 +1,60 @@
+body{
+  background-color:#808080;
+  background-image: url("bgimg.jpg");
+  background-size: cover;
+    background-position: center;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px violet;
+ font-family: calibri cursive ;
+}
+label {
+color: #4d4d00;
+font-weight: bold;
+display: block;
+width: 200px;
+float: left;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+form.form1
+{ border-style: outset;
+  width: 300px;
+  padding: 25px;
+  margin: 25px;
+}
+form.form2{
+  width: 400px;
+border-style: outset;
+    padding: 25px;
+    margin: 25px;
+}
+marquee{
+  font-size: 150%;
+   
+
+}

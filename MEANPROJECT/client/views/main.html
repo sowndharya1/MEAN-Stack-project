@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myMed">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body ng-controller="myController">
+    <h1>Search your medicine</h1>
+<div>
+  <form method="get"  class="form1">
+      <label >Search Medicine</label><br>
+     <p>{{medicine.mediName}}</p>
+     <input type="text" ng-model="search" ng-autocomplete="medicines">
+     <ul>
+       <li ng-repeat="medicine in medicines | filter:search">
+         {{medicine.mediName}}  -
+         {{medicine.mediUse}}
+       </li>
+
+</ul>
+    </form>
+</div>
+    <form method="post" action="/addname" class="form2">
+        <label>Enter the medicine name</label><br>
+        <input type="text" name="mediName" placeholder="Enter medicine name..." required>
+        <input type="text" name="mediUse" placeholder="Enter use..." required>
+        <input type="submit" value="Add Medicine">
+    </form>
+</div>
+  </body>
+</html>
